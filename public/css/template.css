@@ -1,0 +1,12 @@
+.bg-template{
+    background-color: #e8ecef;
+}
+
+nav a{
+    font-size: 36px !important;
+}
+
+.checked {
+    color: orange;
+  }
+
