@@ -19,8 +19,8 @@ class MovieSeeder extends Seeder
         ];
 
         $moviePhotos = [
-            "img/drama/startup.jpg","img/drama/18_again.jpg","img/drama/arthdal.jpg","img/drama/search.jpg","img/drama/itaewon_class.jpg",
-            "img/kids/no-game-no-life.jpg","img/kids/Kimetsu_no_Yaiba.jpg","img/kids/Sword-Art-Online-Progressive.jpg","img/kids/YourName.jpg","img/kids/Boku_no_Hero_Academia.jpg",
+            "img/drama/startup.jpg","img/drama/18_again.jpg","img/drama/arthdal.jpg","img/drama/search.jpg",
+            "img/kids/no-game-no-life.jpg","img/kids/Kimetsu_no_Yaiba.jpg","img/kids/Sword-Art-Online-Progressive.jpg","img/kids/YourName.jpg",
             "img/tvshow/running_man.jpg","img/tvshow/KnowingBros.jpg","img/tvshow/masterChef.jpg","img/tvshow/Hangout_with_Yoo.jpg","img/tvshow/infinite_challenge.jpg"
         ];
 

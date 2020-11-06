@@ -1,7 +1,11 @@
-img {
-    height: 382px !important;
-}
+@media (min-width: 992px) {
+    .home {
+        background-color: white;
+    }
 
-.home {
-    background-color: white;
+    .card img {
+        object-fit: cover;
+        height: 382px !important;
+    }
+
 }
