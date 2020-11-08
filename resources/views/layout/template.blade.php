@@ -15,12 +15,12 @@
 <body class="bg-light">
     <div class="container">
         <nav class="navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="/">BeeFlix</a>
+            <a class="navbar-brand" href="/home">BeeFlix</a>
         </nav>
         <div class="btn-group mb-3" role="group" aria-label="Basic example">
             <a href="{{ url()->previous() }}" class="btn btn-dark btn-sm">
                 <i class="fa fa-arrow-left"></i> KEMBALI</a>
-            <a href="/" class="btn btn-outline-dark btn-sm">LIHAT SEMUA FILM</a>
+            <a href="/home" class="btn btn-outline-dark btn-sm">LIHAT SEMUA FILM</a>
         </div>
 
         <div class="container bg-template p-3">
