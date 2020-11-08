@@ -11,7 +11,8 @@ class GenreController extends Controller
     public function index($name)
     {
         $genre = Genre::where('name', $name)->first();
+        $genres = Genre::all();
         $movie = Movie::where('genre_id', $genre->id)->get();
-	    return view('categoryMovie',['movies' => $movie,'genres' =>$genre]);
+	    return view('categoryMovie',['movies' => $movie,'genre' =>$genre,'genres' =>$genres]);
     }
 }
