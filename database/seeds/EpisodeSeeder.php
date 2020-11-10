@@ -3,7 +3,6 @@
 use Illuminate\Database\Seeder;
 use App\Episode;
 use App\Movie;
-use Faker\Factory as Faker;
 
 class EpisodeSeeder extends Seeder
 {
@@ -14,13 +13,26 @@ class EpisodeSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker::create('id_ID');
+        
+        $episodeTitle = [
+            "The World of Swords",
+            "Beater",
+            "The Red-Nosed Reindeer",
+            "The Black Swordsman",
+            "Murder in the Safe Zone",
+            "Illusionary Avenger",
+            "The Temperature of the Heart",
+            "The Sword Dance of Black and White",
+            "The Blue-Eyed Demon"
+        ];
+
 
         $movies = Movie::get();
+
         foreach ($movies as $movie) {
             for ($i=0; $i <9 ; $i++) { 
                 $episode = new Episode;
-                $episode->fill(["title" => $faker->paragraph(1),"episode" => $i+1,"movie_id" => $movie->id]);
+                $episode->fill(["title" => $episodeTitle[$i],"episode" => $i+1,"movie_id" => $movie->id]);
                 $episode->save();
             }
         }
